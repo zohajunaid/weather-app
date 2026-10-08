@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="app">
+            <header class="app-header">
+                <h1>🌤️ Weather</h1>
+                <p class="subtitle">Search my city in the world</p>
+            </header>
+
+            <div class="search-area">
+                <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter a city name..."
+                autocomplete="off">
+
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div id="message" class="message"></div>
+
+            <div id="weatherCard" class="weather-card hidden">
+                <div class="weather-icon" id="weatherIcon">☀️</div>
+                <h2 class="city-name" id="cityName">—</h2>
+                <div class="temperature" id="temperature">—°C</div>
+                <p class="description" id="description">—</p>
+
+                <div class="details">
+                    <div class="detail">
+                        <span class="detail-label">💧 Humidity</span>
+                        <span class="detail-value" id="humidity">—%</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">💨 Wind</span>
+                        <span class="detail-value" id="wind">— km/h</span>   
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
